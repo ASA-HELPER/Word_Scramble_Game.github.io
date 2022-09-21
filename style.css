@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(1, 168, 37);
+    /* margin: 100px 300px; */
+    min-height: 100vh;
+    width: 440px;
+    padding: 100px 50px;
+    padding-top: 10px !important;
+    box-shadow: 0 10px 20px rgba(147, 19, 19, 0.562);
+}
+
+.container h1{
+    color: red;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 16px 25px;
+    border-bottom: 1px solid rgb(23, 19, 19);
+}
+
+.wordshow{
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.hint{
+    margin: 5px;
+    padding: 5px;
+}
+
+input{
+    margin: 5px;
+    font-size: 30px;
+    outline: none;
+}
+
+input:focus{
+    box-shadow: 2px 2px 4px rgba(147, 19, 19, 0.562);
+}
+
+.buttons{
+    margin: 10px;
+    padding: 5px;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.516);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.25);
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 470px) {
+    .container h2{
+      font-size: 22px;
+      padding: 13px 20px;
+    }
+    .container .wordshow{
+      font-size: 30px;
+      letter-spacing: 20px;
+      margin-right: -20px;
+    }
+    .container{
+      margin: 20px 20px 30px;
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    input{
+      height: 55px;
+      font-size: 17px;
+    }
+    .buttons button{
+      padding: 14px 0;
+      font-size: 16px;
+      width: calc(100% / 2 - 7px);
+    }
+  }
